@@ -1,0 +1,86 @@
+
+/* h1{
+    font-size: 2rem;
+}
+span{
+    font-size: .85rem;
+    }
+    p{
+        font-size: .9rem;
+        margin-left: 10px
+        } */
+        
+        h2{
+            font-size: 1.1rem;
+            font-weight: 800;
+        }
+        .card {
+    transition: transform 0.5s;
+}
+h6{
+    font-weight: 800;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0);
+}
+
+img {
+    object-fit: cover;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    transition: background-color 0.3s ease;
+    /* Duración y suavidad de la transición */
+}
+
+a:hover {
+    background-color: rgb(146, 197, 255);
+}
+
+@media (max-width: 680px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.1rem;
+        font-weight: 800;
+    }
+    span{
+        font-size: .85rem;
+    }
+    p{
+        font-size: .9rem;
+        margin-left: 10px
+    }
+
+    .mx-5 {
+        margin: 0 !important;
+    }
+
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .header-description {
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-img {
+        max-width: 10rem !important;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    .card-container {
+        flex-direction: column-reverse !important;
+    }
+}

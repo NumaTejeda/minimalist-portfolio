@@ -2,10 +2,16 @@
   "name": "minimalist-portfolio",
   "version": "1.0.0",
   "description": "\"minimalist portfolio\"",
-  "main":"app.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "undefined <numa>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1"
+  }
 }
