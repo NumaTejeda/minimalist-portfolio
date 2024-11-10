@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="" id="html">
 
 <head>
     <meta charset="UTF-8">
@@ -9,34 +9,23 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/index.css">
     <script src="/js/index.js"></script>
-
-
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            AOS.init();
-        });
-    </script>
-
-
 </head>
 
 
-<body class="font-monospace bg-light-subtle">
-    <main class="container-sm px-lg-5 py-4 border-2 bg-light-subtle" style="max-width: 800px;">
-        <%- include('./partials/header'); %>
+<body id="body" class="font-monospace">
+    <main class="container-sm px-lg-5 py-4 border-2" style="max-width: 800px;">
+        <%- include('./partials/header', {data: data}); %>
             <%- include('./partials/about'); %>
                 <%- include('./partials/proyectos'); %>
                     <%- include('./partials/educacion'); %>
                         <%- include('./partials/habilidades'); %>
-    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    </main>
+    <%- include('./partials/floating-menu'); %>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

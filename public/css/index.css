@@ -1,24 +1,13 @@
 
-/* h1{
-    font-size: 2rem;
-}
-span{
-    font-size: .85rem;
-    }
-    p{
-        font-size: .9rem;
-        margin-left: 10px
-        } */
-        
-        h2{
-            font-size: 1.1rem;
-            font-weight: 800;
-        }
-        .card {
-    transition: transform 0.5s;
+h2{
+    font-size: 1.1rem;
+    font-weight: 800;
 }
 h6{
     font-weight: 800;
+}
+.card {
+    transition: transform 0.3s;
 }
 
 .project-card:hover {
@@ -42,7 +31,62 @@ a {
 a:hover {
     background-color: rgb(146, 197, 255);
 }
+nav > a:hover{
+    background-color: transparent !important;
+}
+#floating-menu{
+    border-color: rgb(27, 24, 73) !important;
+    background-color: rgba(0, 0, 255, 0.281)!important;
+        a>svg{
+            color:rgb(27, 24, 73);
+        }
+}
 
+/*DARK MODE*/
+.dark-mode{
+    h1, h2, h3, h4, h5, h6, p, span{
+    color: white !important;
+    }
+    .dark-icon{
+        background-color: rgb(27, 24, 73);
+        border: 1.9px solid #fff !important;
+        & svg{
+            fill: #fff;
+        }
+        
+        &:hover{
+            background-color: aliceblue !important;
+        }
+    }
+    .card{
+        background-color: rgb(27, 24, 73);
+        border-color: #fff;
+    }
+    #floating-menu{
+        border-color: #fff !important;
+        background-color: rgba(0, 0, 255, 0.281)!important;
+        a>svg{
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width:910px){
+    #floating-menu{
+        flex-direction: row !important;
+        margin-left: 50% !important;
+        top: auto !important;
+        bottom: -10px !important;
+        background-color: rgba(198, 198, 226, 0.568)!important;
+    }
+    #floating-menu > a{
+        margin: 0 10px 0 10px;
+        &svg{
+            fill: #fff;
+        }
+        
+    }
+}
 @media (max-width: 680px) {
     h1{
         font-size: 2rem;
@@ -82,5 +126,11 @@ a:hover {
 
     .card-container {
         flex-direction: column-reverse !important;
+    }
+}
+/* imprimir */
+@media print {
+    .no-print{
+        display: none !important;
     }
 }
