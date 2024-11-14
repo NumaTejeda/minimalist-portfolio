@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <form action="" method="post">
+    <form action="" method="" class="d-flex flex-column w-25 mx-auto my-3 border border-primary p-2">
+        <h3>Add new Education</h3>
         <label for="title">Titulo: </label>
         <input type="text" name="title" id="title">
         <label for="date">Desde: </label>
@@ -19,18 +20,19 @@
         <label for="date">Hasta: </label>
         <input type="date" name="hasta" id="hasta">
         <label for="description">Descripcion:</label>
-        <input type="text" name="description" id="description">
-        <button id="push-buttom">Subir</button>
+        <textarea name="description" id="description" rows="5"></textarea>
+        <button id="push-buttom" class="mt-2">Subir</button>
     </form>
     <script>
         const pushButton = document.getElementById('push-buttom');
-        const data = {};
+        let data = {};
 
-        pushButton.addEventListener("click", () => {
-            const title = document.getElementById("title").value;
-            const desde = document.getElementById("desde").value;
-            const hasta = document.getElementById('hasta').value;
-            const description = document.getElementById('description').value;
+        pushButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            let title = document.getElementById("title").value;
+            let desde = document.getElementById("desde").value;
+            let hasta = document.getElementById('hasta').value;
+            let description = document.getElementById('description').value;
 
             data = {
                 title: title,
@@ -38,6 +40,8 @@
                 hasta: hasta,
                 description: description,
             }
+
+            console.log(data)
         })
     </script>
 </body>
