@@ -18,10 +18,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.get('/', (req, res) => {
+app.get('/portfolio', (req, res) => {
     res.render('index')
+})
+app.get('/education', (req, res) => {
+    res.render('formsViews/educationForm')
 })
 
 app.listen(port, () => {
-    console.log(`Abrime => http://localhost:${port}/`);
+    console.log(`Abrime => http://localhost:${port}/portfolio`);
 })
