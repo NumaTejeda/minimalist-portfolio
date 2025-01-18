@@ -4,7 +4,7 @@ Este repositorio contiene el código de mi portafolio web, diseñado con un enfo
 
 ## Características
 
-- **Diseño minimalista**: La interfaz es sencilla y moderna, destacando la información sin distracciones visuales.
+- **Diseño minimalista**: La interfaz es sencilla y moderna, destacando la información sin distracciones visuales. (Creditos al pie)
 - **Imprimible**: La disposición del contenido y los estilos CSS están optimizados para una visualización adecuada en pantalla y para imprimir como un CV en papel.
 - **Responsivo**: Adaptado para una experiencia de usuario fluida en dispositivos móviles, tabletas y pantallas de escritorio.
 
@@ -45,5 +45,9 @@ Este diseño fue inspirado en el trabajo de:
 
 ## Contribuciones
 Las contribuciones son bienvenidas. Si tienes sugerencias o mejoras, no dudes en abrir un issue o enviar un pull request.
+
+##Maduracion
+
+Este proyecto busca a futuro poder crear un crud para cada una de las seciones, implementando un front para una edicion mas intuitiva y facil para aquellos que no son desarrolladores y quisieran aprovecharlo. 
 
 
