@@ -9,7 +9,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "author": "<numa>",
+  "author": "undefined <numa>",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.10",
@@ -17,5 +17,14 @@
     "nodemon": "^3.1.7",
     "sequelize": "^6.37.5",
     "sqlite3": "^5.1.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NumaTejeda/minimalist-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NumaTejeda/minimalist-portfolio/issues"
+  },
+  "homepage": "https://github.com/NumaTejeda/minimalist-portfolio#readme"
 }
